@@ -1,0 +1,980 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rocket Launch Embroidered Linen Shirt | Baby Bling</title>
+<meta name="description" content="A black linen Cuban collar shirt with a hand-embroidered rocket, a ringed planet and a scatter of tiny stars. Breathable linen, coconut wood buttons, itch-free patch. By Baby Bling.">
+<meta name="theme-color" content="#F2DFC2">
+<meta property="og:title" content="Rocket Launch Embroidered Linen Shirt — Baby Bling">
+<meta property="og:description" content="Featherlight linen cotton. Hand embroidered. Made for real play.">
+<meta property="og:image" content="assets-blk/bl-shirt.webp">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════ TOKENS ══════════════════════════ */
+:root{
+  --sky-0:#DCBE8E; --sky-1:#EED8B6; --sky-2:#F6E8D2; --sky-3:#FDF8F0;
+  --cream:#FFFBF6; --cream-2:#FFF3E9;
+  --peach:#F7C9B0; --peach-2:#FBE0D2; --peach-deep:#E79C7B;
+  --ink:#0E2F4C; --ink-2:#3B6285; --ink-3:#7495AF;
+  --red:#D63B31; --blue:#2F63D8; --wood:#B07A45; --green:#219767;
+  --line:rgba(14,47,76,.10);
+  --glass:rgba(255,255,255,.80);
+  --shadow-s:0 2px 10px rgba(30,90,140,.10);
+  --shadow-m:0 14px 34px -12px rgba(30,90,140,.34);
+  --shadow-l:0 36px 80px -26px rgba(24,80,130,.48);
+  --r-s:16px; --r-m:24px; --r-l:34px; --r-xl:44px;
+  --pad:clamp(18px,5vw,64px);
+  --maxw:1240px;
+  --bar-h:0px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--sky-2)}
+body{
+  font-family:'Outfit',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color:var(--ink); background:transparent;
+  overflow-x:hidden; line-height:1.6;
+  font-size:clamp(15px,1.05vw + 12px,17px);
+  padding-bottom:var(--bar-h);
+}
+img{max-width:100%;height:auto;display:block}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,.disp{font-family:'Fredoka',system-ui,sans-serif;font-weight:600;line-height:1.03;letter-spacing:-.022em}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2);opacity:.75}
+
+/* ══════════════════════════ GLOBAL SKY ══════════════════════════ */
+#skybg{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none;contain:strict}
+#grad{position:absolute;left:0;right:0;top:0;height:300%;will-change:transform;
+  background:linear-gradient(180deg,
+    #F6E8D2 0%, #F2DFC2 8%, #EED8B6 17%,
+    #F5E7D2 27%, #FBF3E6 34%, #F3E2CB 42%,
+    #EBD6B4 52%, #F8EEDE 62%, #FDE8D8 70%,
+    #F7D9C4 76%, #F0E0C8 85%, #E6CDA4 93%, #DCBE8E 100%)}
+#sun{position:absolute;top:-10vh;right:-14vw;width:min(70vw,700px);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,248,226,.98),rgba(250,222,166,.6) 32%,rgba(246,210,150,0) 68%);
+  will-change:transform}
+#cloudfield{position:absolute;inset:0}
+
+/* one puffy cloud */
+.cl{position:absolute;left:0;top:0;will-change:transform;
+  filter:drop-shadow(0 14px 22px rgba(160,125,80,.20))}
+.cl i{position:absolute;background:#fff;border-radius:999px;display:block;
+  box-shadow:inset 0 -16px 26px -16px rgba(198,164,118,.44)}
+.cl .b {left:2%;  bottom:0;   width:96%; height:46%; border-radius:999px}
+.cl .l1{left:4%;  bottom:16%; width:44%; height:74%; border-radius:50%}
+.cl .l2{left:26%; bottom:26%; width:52%; height:96%; border-radius:50%}
+.cl .l3{right:2%; bottom:14%; width:40%; height:66%; border-radius:50%}
+.cl .l4{left:16%; bottom:30%; width:30%; height:56%; border-radius:50%}
+.cl .l5{right:20%;bottom:34%; width:26%; height:50%; border-radius:50%}
+.cl.soft i{background:rgba(255,255,255,.70);box-shadow:none}
+.cl.mist i{background:rgba(255,255,255,.42);box-shadow:none}
+.cl.warm i{background:#fff;box-shadow:inset 0 -18px 30px -16px rgba(232,176,136,.38)}
+
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes floaty{0%,100%{transform:translate3d(0,0,0) rotate(0deg)}50%{transform:translate3d(0,-22px,0) rotate(.6deg)}}
+@keyframes swayA{0%,100%{transform:translate(0,0) rotate(-4deg)}50%{transform:translate(10px,-26px) rotate(4deg)}}
+@keyframes swayB{0%,100%{transform:translate(0,0) rotate(3deg)}50%{transform:translate(-12px,-32px) rotate(-3deg)}}
+@keyframes shadowPulse{0%,100%{transform:translateX(-50%) scale(1);opacity:.30}50%{transform:translateX(-50%) scale(.86);opacity:.16}}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes pop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes nudge{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}
+@keyframes riseFade{from{opacity:1;transform:translateY(0) scale(1)}to{opacity:0;transform:translateY(-190px) scale(1.25)}}
+@keyframes live{0%{box-shadow:0 0 0 0 rgba(214,59,49,.55)}70%{box-shadow:0 0 0 9px rgba(214,59,49,0)}100%{box-shadow:0 0 0 0 rgba(214,59,49,0)}}
+
+/* ══════════════════════════ TICKER / NAV ══════════════════════════ */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;position:relative;z-index:60;font-size:.78rem;letter-spacing:.03em}
+.ticker .track{display:flex;width:max-content;animation:marq 34s linear infinite}
+.ticker span{padding:9px 0;display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.ticker span::after{content:"✦";opacity:.5;margin:0 22px}
+
+#nav{position:sticky;top:0;z-index:55;transition:background .3s,box-shadow .3s,backdrop-filter .3s}
+#nav.stuck{background:rgba(255,255,255,.66);backdrop-filter:blur(18px) saturate(1.5);
+  box-shadow:0 1px 0 rgba(255,255,255,.6),0 10px 30px -22px rgba(20,70,110,.9)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:9px;font-family:'Fredoka';font-weight:600;font-size:1.16rem}
+.logo .dot{width:28px;height:28px;border-radius:50%;background:linear-gradient(150deg,var(--red),#ff7a5c);position:relative;flex:none;box-shadow:0 4px 10px -3px rgba(214,59,49,.6)}
+.logo .dot::after{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:linear-gradient(150deg,var(--blue),#6b95ff);right:-9px;top:9px;box-shadow:0 4px 10px -3px rgba(47,99,216,.5)}
+.logo b{font-weight:600;margin-left:10px}
+.nav-links{display:none;gap:28px;font-size:.93rem;font-weight:500}
+.nav-links a{position:relative;padding:4px 0;color:var(--ink-2)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);border-radius:2px;transition:width .25s}
+.nav-links a:hover{color:var(--ink)}.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.cart-btn{position:relative;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.85);box-shadow:var(--shadow-s);display:grid;place-items:center;transition:transform .2s}
+.cart-btn:active{transform:scale(.92)}
+.cart-btn .cnt{position:absolute;top:-3px;right:-3px;min-width:19px;height:19px;border-radius:10px;background:var(--red);color:#fff;font-size:.66rem;font-weight:700;display:grid;place-items:center;padding:0 5px;opacity:0;transform:scale(.5);transition:.25s cubic-bezier(.34,1.56,.64,1)}
+.cart-btn .cnt.on{opacity:1;transform:scale(1)}
+@media(min-width:920px){.nav-links{display:flex}}
+
+/* ══════════════════════════ BUTTONS ══════════════════════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;
+  border-radius:999px;padding:16px 30px;font-size:1rem;
+  transition:transform .18s cubic-bezier(.34,1.4,.64,1),box-shadow .25s,background .25s;will-change:transform;text-align:center}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:linear-gradient(160deg,#e8483d,var(--red));color:#fff;
+  box-shadow:0 14px 30px -10px rgba(214,59,49,.85),inset 0 1px 0 rgba(255,255,255,.32)}
+.btn-primary:hover{box-shadow:0 20px 38px -10px rgba(214,59,49,.9);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.78);color:var(--ink);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.9),0 8px 22px -12px rgba(20,70,110,.7);backdrop-filter:blur(10px)}
+.btn-ghost:hover{background:#fff}
+.btn-dark{background:var(--ink);color:#fff;box-shadow:0 14px 30px -12px rgba(14,47,76,.95)}
+.btn-block{width:100%}
+
+/* ══════════════════════════ HERO ══════════════════════════ */
+.hero{position:relative;isolation:isolate;padding-top:clamp(2px,1.4vw,22px);padding-bottom:clamp(34px,6vw,80px)}
+.hero-in{position:relative;z-index:2;display:grid;gap:clamp(8px,2.4vw,22px);align-items:center}
+.hero-top{order:0;text-align:center}
+.stage{order:1}
+.hero-bottom{order:2;text-align:center}
+@media(min-width:960px){
+  .hero-in{grid-template-columns:1.02fr .98fr;grid-template-rows:auto auto;
+           column-gap:clamp(24px,3vw,56px);row-gap:0;align-items:center}
+  .hero-top{grid-column:1;grid-row:1;text-align:left;align-self:end}
+  .hero-bottom{grid-column:1;grid-row:2;text-align:left;align-self:start}
+  .stage{grid-column:2;grid-row:1 / span 2}
+  .hero{padding-bottom:clamp(56px,8vw,120px)}
+}
+.badge-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:16px}
+@media(min-width:960px){.badge-row{justify-content:flex-start}}
+.pill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.82);backdrop-filter:blur(10px);
+  border-radius:999px;padding:7px 14px;font-size:.76rem;font-weight:600;color:var(--ink-2);
+  box-shadow:0 6px 16px -8px rgba(20,70,110,.6),inset 0 0 0 1px rgba(255,255,255,.7)}
+.pill .em{font-size:.9rem;line-height:1}
+h1{font-size:clamp(2.4rem,8.8vw,4.5rem);letter-spacing:-.035em;
+  text-shadow:0 2px 26px rgba(255,255,255,.9),0 0 60px rgba(255,255,255,.75)}
+h1 .line2{display:block;background:linear-gradient(100deg,#B5340C 6%,#D9701C 44%,#123A63 94%);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.dk{display:none}
+@media(min-width:960px){.dk{display:block}}
+.tax-note{font-size:.84rem;color:var(--ink-2);margin-top:4px;opacity:.85}
+.qty-row{display:flex;align-items:center;gap:14px;margin-top:18px;justify-content:center;flex-wrap:wrap}
+.urg{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;color:var(--ink-2)}
+.opt-label{margin-top:22px}
+.hero .sizes{grid-template-columns:repeat(3,1fr);max-width:430px;margin-inline:auto}
+.hero .opt-label{max-width:430px;margin-inline:auto}
+.hero .size{background:rgba(255,255,255,.78);backdrop-filter:blur(8px);
+  box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.9),0 6px 16px -10px rgba(20,70,110,.8)}
+.hero .size:hover{background:#fff}
+.hero .size.sel{background:var(--ink);color:#fff;box-shadow:0 10px 22px -8px rgba(14,47,76,.9)}
+.hero .qty{background:rgba(255,255,255,.78);backdrop-filter:blur(8px);
+  box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.9)}
+.stage .bv-thumbs{margin-top:18px}
+@media(min-width:960px){
+  .hero .sizes,.hero .opt-label{margin-inline:0}
+  .qty-row,.opt-label{justify-content:flex-start}
+}
+.hero-sub{margin-top:14px;font-size:clamp(1rem,1.1vw + .8rem,1.16rem);color:var(--ink-2);max-width:30ch;margin-inline:auto}
+@media(min-width:960px){.hero-sub{margin-inline:0;max-width:34ch}
+  .hero .opt-label{text-align:left}}
+.price-row{display:flex;align-items:baseline;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+@media(min-width:960px){.price-row{justify-content:flex-start}}
+.price{font-family:'Fredoka';font-size:2rem;font-weight:600}
+.mrp{text-decoration:line-through;color:var(--ink-3);font-size:1.05rem}
+.save{background:#D8F3E6;color:var(--green);font-weight:700;font-size:.76rem;padding:5px 11px;border-radius:999px}
+.hero-actions{display:flex;flex-direction:column;gap:10px;margin-top:18px;max-width:420px;margin-inline:auto}
+@media(min-width:960px){.hero-actions{margin-inline:0;flex-direction:row;max-width:none}}
+.microtrust{margin-top:14px;font-size:.82rem;color:var(--ink-2);display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+@media(min-width:960px){.microtrust{justify-content:flex-start}}
+.microtrust b{font-weight:600}
+
+/* 3D floating shirt */
+.stage{position:relative;perspective:1300px;perspective-origin:50% 45%;display:grid;place-items:center;
+  padding-block:clamp(0px,1vw,18px)}
+.shirt-scene{position:relative;width:min(72vw,470px);aspect-ratio:802/803;transform-style:preserve-3d;will-change:transform;
+  transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.shirt-float{position:absolute;inset:0;animation:floaty 7s ease-in-out infinite;transform-style:preserve-3d}
+.shirt-img{width:100%;height:100%;object-fit:contain;
+  filter:drop-shadow(0 40px 34px rgba(20,70,110,.28)) drop-shadow(0 8px 10px rgba(20,70,110,.12));
+  transform:translateZ(60px)}
+.shirt-halo{position:absolute;left:50%;top:48%;width:118%;aspect-ratio:1;translate:-50% -50%;
+  background:radial-gradient(circle,rgba(255,255,255,.92),rgba(255,255,255,.5) 40%,rgba(255,255,255,0) 68%);
+  z-index:-1;filter:blur(8px)}
+.ground{position:absolute;left:50%;bottom:-3%;width:56%;height:26px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(20,70,110,.34),rgba(20,70,110,0) 70%);filter:blur(9px);
+  transform:translateX(-50%);animation:shadowPulse 7s ease-in-out infinite}
+.bln{position:absolute;width:clamp(26px,6vw,46px);z-index:3;filter:drop-shadow(0 10px 14px rgba(20,70,110,.24))}
+.bln.a{left:-7%;top:6%;animation:swayA 6s ease-in-out infinite;transform:translateZ(60px)}
+.bln.b{right:-7%;top:24%;width:clamp(22px,5vw,40px);animation:swayB 7.6s ease-in-out infinite;transform:translateZ(60px)}
+.bln.c{left:-4%;bottom:4%;width:clamp(18px,4vw,30px);opacity:.8;animation:swayA 9s ease-in-out infinite reverse}
+
+.cue{position:absolute;left:50%;bottom:6px;translate:-50% 0;z-index:4;display:none;flex-direction:column;align-items:center;gap:6px;
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);opacity:.7}
+@media(min-width:960px){.cue{display:flex}}
+.cue .mouse{width:22px;height:34px;border-radius:12px;border:1.6px solid currentColor;position:relative}
+.cue .mouse::after{content:"";position:absolute;left:50%;top:6px;translate:-50% 0;width:3px;height:6px;border-radius:2px;background:currentColor;animation:bob 1.8s ease-in-out infinite}
+
+/* ══════════════════════════ MARQUEE STRIP ══════════════════════════ */
+.strip{background:var(--ink);color:#fff;overflow:hidden;padding:14px 0;border-radius:999px;
+  margin-inline:auto;max-width:calc(var(--maxw) - 2 * var(--pad));box-shadow:var(--shadow-m)}
+.strip-hold{padding-inline:var(--pad)}
+.strip .track{display:flex;width:max-content;animation:marq 30s linear infinite}
+.strip .track:hover{animation-play-state:paused}
+.strip i{font-style:normal;display:inline-flex;align-items:center;gap:12px;padding:0 26px;white-space:nowrap;
+  font-family:'Fredoka';font-size:clamp(1rem,2.4vw,1.35rem);font-weight:500}
+.strip i em{font-style:normal;color:var(--peach)}
+
+/* ══════════════════════════ SECTIONS ══════════════════════════ */
+section{position:relative}
+.sec{padding-block:clamp(52px,8.5vw,116px)}
+.sec-head{text-align:center;max-width:660px;margin:0 auto clamp(30px,5vw,56px)}
+.sec-head h2{font-size:clamp(1.95rem,5.8vw,3.2rem);margin-top:12px;text-shadow:0 2px 20px rgba(255,255,255,.6)}
+.sec-head p{margin-top:14px;color:var(--ink-2);font-size:1.03rem}
+
+/* frosted panel that floats on the sky */
+.panel{background:rgba(255,255,255,.62);backdrop-filter:blur(22px) saturate(1.25);
+  border-radius:var(--r-xl);box-shadow:var(--shadow-l),inset 0 0 0 1px rgba(255,255,255,.75);
+  padding:clamp(24px,5vw,64px) clamp(18px,4vw,54px)}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(8px,2vw,22px);text-align:center}
+.stat{background:#fff;border-radius:var(--r-m);padding:clamp(16px,3vw,30px) clamp(8px,2vw,20px);box-shadow:var(--shadow-m)}
+.stat .n{font-family:'Fredoka';font-size:clamp(1.5rem,5.6vw,2.7rem);font-weight:600;line-height:1;
+  background:linear-gradient(140deg,var(--red),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{margin-top:8px;font-size:clamp(.72rem,2.2vw,.88rem);color:var(--ink-2);font-weight:500;line-height:1.35}
+
+.details{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(12px,2.4vw,26px)}
+@media(min-width:900px){.details{grid-template-columns:repeat(4,1fr)}}
+.dcard{background:#fff;border-radius:var(--r-m);padding:14px 14px 20px;box-shadow:var(--shadow-m);text-align:center;
+  transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.dcard:hover{transform:translateY(-8px);box-shadow:var(--shadow-l)}
+.dzoom{width:100%;aspect-ratio:1;border-radius:18px;object-fit:cover;background:#FFF3EC;
+  box-shadow:inset 0 0 0 1px rgba(14,47,76,.06)}
+.dcard h3{margin-top:14px;font-size:1.02rem}
+.dcard p{margin-top:6px;font-size:.85rem;color:var(--ink-2);line-height:1.5}
+
+.split{display:grid;gap:clamp(24px,4vw,60px);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr}}
+.fabric-card{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow-l);
+  aspect-ratio:3/4;background:var(--cream-2);margin:0}
+.fabric-card img{width:100%;height:100%;object-fit:cover;display:block}
+.feature-list{list-style:none;display:grid;gap:14px;margin-top:26px}
+.feature-list li{display:flex;gap:14px;align-items:flex-start}
+.feature-list .ic{flex:none;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font-size:1rem;
+  background:rgba(255,255,255,.9);box-shadow:var(--shadow-s)}
+.feature-list b{display:block;font-weight:600}
+.feature-list span{font-size:.9rem;color:var(--ink-2)}
+
+.bv-thumbs{display:flex;gap:10px;justify-content:center;margin-top:14px}
+.bvt{width:60px;height:60px;border-radius:14px;overflow:hidden;background:rgba(255,255,255,.85);
+  box-shadow:0 6px 16px -8px rgba(20,70,110,.7),inset 0 0 0 1.5px rgba(255,255,255,.9);transition:.2s}
+.bvt img{width:100%;height:100%;object-fit:cover}
+.bvt.sel{box-shadow:0 0 0 2.5px var(--ink),0 8px 18px -8px rgba(20,70,110,.8)}
+.bvt:hover{transform:translateY(-2px)}
+@media(min-width:960px){
+    }
+.stars{color:#F5A623;letter-spacing:1px}
+.opt-label{display:flex;justify-content:space-between;align-items:baseline;margin:24px 0 10px;font-size:.85rem;font-weight:600}
+.opt-label a{color:var(--blue);font-weight:600;font-size:.8rem;border-bottom:1px dashed currentColor}
+.sizes{display:grid;grid-template-columns:repeat(auto-fit,minmax(72px,1fr));gap:8px}
+.size{padding:12px 4px;border-radius:14px;background:var(--cream);box-shadow:inset 0 0 0 1.5px var(--line);
+  font-weight:600;font-size:.88rem;text-align:center;transition:.2s;position:relative}
+.size:hover{box-shadow:inset 0 0 0 1.5px var(--ink-3)}
+.size.sel{background:var(--ink);color:#fff;box-shadow:0 10px 20px -8px rgba(14,47,76,.85)}
+.size.out{opacity:.36;cursor:not-allowed;text-decoration:line-through}
+.size small{display:block;font-weight:400;font-size:.66rem;opacity:.7;margin-top:1px}
+.sizes.shake{animation:nudge .45s}
+.qty{display:flex;align-items:center;gap:2px;background:var(--cream);border-radius:999px;padding:4px;box-shadow:inset 0 0 0 1.5px var(--line);width:max-content}
+.qty button{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:1.2rem;transition:.15s}
+.qty button:hover{background:#fff;box-shadow:var(--shadow-s)}
+.qty span{min-width:32px;text-align:center;font-weight:600}
+.dot-live{width:8px;height:8px;border-radius:50%;background:var(--red);flex:none;animation:live 1.8s infinite}
+
+.reviews{display:grid;gap:clamp(12px,2vw,20px);grid-template-columns:1fr}
+@media(min-width:760px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.rev-card{background:#fff;border-radius:var(--r-m);padding:24px;box-shadow:var(--shadow-m);display:flex;flex-direction:column;gap:12px}
+.rev-card .stars{font-size:.9rem}
+.rev-card p{font-size:.95rem;color:var(--ink-2);flex:1}
+.rev-who{display:flex;align-items:center;gap:10px;font-size:.83rem}
+.av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:700;color:#fff;font-size:.8rem;flex:none}
+.rev-who b{font-weight:600;display:block}
+.rev-who small{color:var(--ink-3)}
+
+.trust{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(10px,2vw,20px)}
+@media(min-width:820px){.trust{grid-template-columns:repeat(4,1fr)}}
+.tcard{background:rgba(255,255,255,.78);backdrop-filter:blur(12px);border-radius:var(--r-m);padding:22px 18px;text-align:center;
+  box-shadow:var(--shadow-m),inset 0 0 0 1px rgba(255,255,255,.7)}
+.tcard .em{font-size:1.7rem}
+.tcard b{display:block;margin-top:8px;font-size:.95rem;font-weight:600}
+.tcard span{font-size:.8rem;color:var(--ink-2)}
+
+.faq{max-width:760px;margin-inline:auto;display:grid;gap:10px}
+.q{background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-radius:var(--r-s);box-shadow:var(--shadow-m);overflow:hidden;transition:box-shadow .25s}
+.q>button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;text-align:left;font-weight:600;font-size:.98rem}
+.q .ch{flex:none;width:26px;height:26px;border-radius:50%;background:var(--cream);display:grid;place-items:center;transition:transform .3s;font-size:1.1rem;line-height:1}
+.q.open .ch{transform:rotate(45deg);background:var(--ink);color:#fff}
+.q .a{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
+.q .a p{padding:0 20px 20px;color:var(--ink-2);font-size:.92rem}
+
+.final{text-align:center;padding-block:clamp(66px,10vw,140px)}
+.final h2{font-size:clamp(2.05rem,6.8vw,3.7rem);text-shadow:0 2px 26px rgba(255,255,255,.7)}
+.final p{margin:16px auto 0;max-width:44ch;color:var(--ink-2)}
+
+footer{background:var(--ink);color:#fff;padding-block:clamp(40px,6vw,70px) 30px;
+  border-radius:var(--r-xl) var(--r-xl) 0 0;box-shadow:var(--shadow-l);position:relative;z-index:2}
+.f-grid{display:grid;gap:32px;grid-template-columns:1fr}
+@media(min-width:760px){.f-grid{grid-template-columns:1.6fr 1fr 1fr 1fr}}
+footer h4{font-family:'Fredoka';font-size:.95rem;font-weight:600;margin-bottom:14px;color:#fff}
+footer ul{list-style:none;display:grid;gap:9px}
+footer a,footer p{color:rgba(255,255,255,.66);font-size:.88rem}
+footer a:hover{color:#fff}
+.f-bot{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.78rem;color:rgba(255,255,255,.5)}
+
+/* ══════════════════════════ STICKY BUY BAR ══════════════════════════ */
+#buybar{position:fixed;left:0;right:0;bottom:0;z-index:70;transform:translateY(110%);
+  transition:transform .4s cubic-bezier(.22,1,.36,1);
+  background:rgba(255,255,255,.86);backdrop-filter:blur(20px) saturate(1.5);
+  box-shadow:0 -1px 0 rgba(255,255,255,.7),0 -14px 40px -24px rgba(20,70,110,.9);
+  padding:10px var(--pad) calc(10px + env(safe-area-inset-bottom))}
+#buybar.on{transform:translateY(0)}
+.bb-in{max-width:var(--maxw);margin-inline:auto;display:flex;align-items:center;gap:12px}
+.bb-thumb{width:46px;height:46px;border-radius:12px;background:var(--cream-2) url('assets-blk/bl-shirt.webp') center/150% no-repeat;flex:none;box-shadow:var(--shadow-s)}
+.bb-txt{flex:1;min-width:0}
+.bb-txt b{display:block;font-size:.86rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bb-txt span{font-size:.8rem;color:var(--ink-2)}
+#buybar .btn{padding:14px 22px;font-size:.92rem;flex:none}
+@media(min-width:960px){#buybar .btn{padding:14px 34px}}
+
+/* ══════════════════════════ CART ══════════════════════════ */
+#scrim{position:fixed;inset:0;background:rgba(14,47,76,.44);backdrop-filter:blur(4px);z-index:80;opacity:0;pointer-events:none;transition:opacity .3s}
+#scrim.on{opacity:1;pointer-events:auto}
+#cart{position:fixed;top:0;right:0;bottom:0;width:min(94vw,410px);z-index:90;background:var(--cream);
+  transform:translateX(101%);transition:transform .42s cubic-bezier(.22,1,.36,1);display:flex;flex-direction:column;box-shadow:var(--shadow-l)}
+#cart.on{transform:translateX(0)}
+.cart-head{display:flex;align-items:center;justify-content:space-between;padding:20px var(--pad);border-bottom:1px solid var(--line)}
+.cart-head h3{font-size:1.15rem}
+.x{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;box-shadow:var(--shadow-s);font-size:1.1rem}
+.cart-body{flex:1;overflow-y:auto;padding:20px var(--pad)}
+.cart-empty{text-align:center;color:var(--ink-3);padding-top:60px}
+.ci{display:flex;gap:14px;background:#fff;border-radius:var(--r-s);padding:12px;box-shadow:var(--shadow-s);animation:pop .35s cubic-bezier(.34,1.4,.64,1)}
+.ci img{width:64px;height:64px;object-fit:contain;background:var(--cream-2);border-radius:10px;flex:none}
+.ci .info{flex:1;min-width:0}
+.ci b{font-size:.9rem;font-weight:600;display:block}
+.ci small{color:var(--ink-3);font-size:.78rem}
+.ci .row{display:flex;justify-content:space-between;align-items:center;margin-top:8px}
+.ci .rm{font-size:.76rem;color:var(--ink-3);border-bottom:1px solid currentColor}
+.cart-foot{padding:18px var(--pad) calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:#fff}
+.cart-foot .tot{display:flex;justify-content:space-between;font-weight:600;margin-bottom:6px}
+.cart-foot .note{font-size:.76rem;color:var(--ink-3);margin-bottom:14px}
+.freebar{height:7px;border-radius:4px;background:var(--line);overflow:hidden;margin:10px 0 6px}
+.freebar i{display:block;height:100%;border-radius:4px;background:linear-gradient(90deg,var(--green),#6fd3a1);width:0;transition:width .5s}
+
+.rev{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1)}
+.rev.vis{opacity:1;transform:none}
+.rev.d1{transition-delay:.08s}.rev.d2{transition-delay:.16s}.rev.d3{transition-delay:.24s}.rev.d4{transition-delay:.32s}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .rev{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════ GLOBAL SKY (behind the entire page) ══════════════ -->
+<div id="skybg" aria-hidden="true">
+  <div id="grad"></div>
+  <div id="sun"></div>
+  <div id="cloudfield"></div>
+</div>
+
+<!-- ══════════════ TICKER ══════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Free shipping over ₹999</span><span>Cash on delivery available</span><span>7-day easy returns</span><span>Hand-embroidered in India</span>
+    <span>Free shipping over ₹999</span><span>Cash on delivery available</span><span>7-day easy returns</span><span>Hand-embroidered in India</span>
+  </div>
+</div>
+
+<!-- ══════════════ NAV ══════════════ -->
+<header id="nav">
+  <div class="wrap nav-in">
+    <a href="#" class="logo"><span class="dot"></span><b>Baby&nbsp;Bling</b></a>
+    <nav class="nav-links">
+      <a href="#fabric">The Fabric</a>
+      <a href="#details">Details</a>
+      <a href="#buy">Sizes</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#buy" class="btn btn-dark" style="padding:11px 20px;font-size:.88rem">Shop now</a>
+      <button class="cart-btn" id="openCart" aria-label="Open cart">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <i class="cnt" id="cartCount">0</i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" id="buy">
+  <div class="wrap hero-in">
+    <div class="hero-top">
+      <div class="badge-row">
+        <span class="pill"><span class="em">🪶</span> Featherlight 120 GSM</span>
+        <span class="pill"><span class="em">🚀</span> Hand embroidered</span>
+        <span class="pill"><span class="em">🌿</span> Linen × Cotton</span>
+      </div>
+      <h1>So light,<span class="line2">it might<br class="dk"> take off.</span></h1>
+    </div>
+
+    <div class="hero-bottom">
+      <p class="hero-sub">Breathable black linen, coconut wood buttons, and a rocket stitched on by hand.</p>
+
+      <div class="price-row">
+        <span class="price">₹1,699</span><span class="save">Free shipping</span>
+      </div>
+      <p class="tax-note">Inclusive of all taxes · Cash on delivery available</p>
+
+      <div class="opt-label"><span>Size (age)</span><a href="#faq">Size guide</a></div>
+      <div class="sizes" id="sizes">
+        <button class="size" data-size="4-5Y">4–5<small>years</small></button>
+        <button class="size" data-size="5-6Y">5–6<small>years</small></button>
+        <button class="size" data-size="6-7Y">6–7<small>years</small></button>
+        <button class="size" data-size="7-8Y">7–8<small>years</small></button>
+        <button class="size" data-size="8-9Y">8–9<small>years</small></button>
+        <button class="size" data-size="9-10Y">9–10<small>years</small></button>
+      </div>
+
+      <div class="qty-row">
+        <div class="qty">
+          <button id="qMinus" aria-label="Decrease quantity">−</button><span id="qVal">1</span><button id="qPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <span class="urg"><span class="dot-live"></span><span id="urgTxt">Every rocket embroidered by hand, in small batches</span></span>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-block" id="addBtn">Add to cart — ₹1,699</button>
+        <button class="btn btn-dark btn-block" id="buyNow">Buy it now</button>
+      </div>
+
+      <div class="microtrust">
+        <span>🇮🇳 <b>Handcrafted</b> in India</span>
+        <span>🚚 Ships in 24 hrs</span>
+        <span>↩︎ 7-day returns</span>
+      </div>
+    </div>
+
+    <div class="stage">
+      <div class="shirt-scene" id="scene">
+        <div class="shirt-float">
+          <div class="shirt-halo"></div>
+          <img class="shirt-img" src="assets-blk/bl-shirt.webp" width="802" height="803" fetchpriority="high"
+               alt="Baby Bling black linen kids shirt with a hand-embroidered rocket and planets">
+        </div>
+        <div class="ground"></div>
+        <svg class="bln a" viewBox="0 0 70 80" aria-hidden="true"><ellipse cx="35" cy="32" rx="20" ry="20" fill="#D9701C"/><ellipse cx="28" cy="25" rx="6" ry="5" fill="#fff" opacity=".25"/><ellipse cx="35" cy="34" rx="32" ry="9" fill="none" stroke="#B5340C" stroke-width="3.5" transform="rotate(-18 35 34)"/><path d="M35 54c6 8-6 12-1 20" stroke="#0E2F4C" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".35"/></svg>
+        <svg class="bln b" viewBox="0 0 70 80" aria-hidden="true"><ellipse cx="35" cy="32" rx="20" ry="20" fill="#123A63"/><ellipse cx="28" cy="25" rx="6" ry="5" fill="#fff" opacity=".25"/><ellipse cx="35" cy="34" rx="32" ry="9" fill="none" stroke="#2E6FA8" stroke-width="3.5" transform="rotate(-18 35 34)"/><path d="M35 54c6 8-6 12-1 20" stroke="#0E2F4C" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".35"/></svg>
+        <svg class="bln c" viewBox="0 0 70 80" aria-hidden="true"><ellipse cx="35" cy="32" rx="20" ry="20" fill="#C9A227"/><ellipse cx="28" cy="25" rx="6" ry="5" fill="#fff" opacity=".25"/><ellipse cx="35" cy="34" rx="32" ry="9" fill="none" stroke="#8C6D12" stroke-width="3.5" transform="rotate(-18 35 34)"/><path d="M35 54c6 8-6 12-1 20" stroke="#0E2F4C" stroke-width="1.5" fill="none" stroke-linecap="round" opacity=".35"/></svg>
+      </div>
+      <div class="bv-thumbs" aria-label="Product views">
+        <button class="bvt sel" data-src="assets-blk/bl-shirt.webp"        aria-label="Front"><img src="assets-blk/bl-shirt.webp" alt="" loading="lazy"></button>
+        <button class="bvt"     data-src="assets-blk/bl-back.webp"         aria-label="Back"><img src="assets-blk/bl-back.webp" alt="" loading="lazy"></button>
+        <button class="bvt"     data-src="assets-blk/bl-d-rocket.webp" aria-label="Embroidery"><img src="assets-blk/bl-d-rocket.webp" alt="" loading="lazy"></button>
+        <button class="bvt"     data-src="assets-blk/bl-lifestyle.webp"    aria-label="On a child"><img src="assets-blk/bl-lifestyle.webp" alt="" loading="lazy"></button>
+        <button class="bvt"     data-src="assets-blk/bl-clouds.webp"   aria-label="In the sky"><img src="assets-blk/bl-clouds.webp" alt="" loading="lazy"></button>
+        <button class="bvt"     data-src="assets-blk/bl-folded.webp"   aria-label="Folded"><img src="assets-blk/bl-folded.webp" alt="" loading="lazy"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ MARQUEE ══════════════ -->
+<div class="strip-hold" aria-hidden="true">
+  <div class="strip">
+    <div class="track">
+      <i>Breathe-through-it linen <em>✦</em></i><i>No-itch promise <em>✦</em></i><i>Coconut wood buttons <em>✦</em></i><i>Pre-washed &amp; pre-shrunk <em>✦</em></i><i>Hand embroidered <em>✦</em></i>
+      <i>Breathe-through-it linen <em>✦</em></i><i>No-itch promise <em>✦</em></i><i>Coconut wood buttons <em>✦</em></i><i>Pre-washed &amp; pre-shrunk <em>✦</em></i><i>Hand embroidered <em>✦</em></i>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ STATS ══════════════ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Built for Indian summers</p>
+      <h2>Light enough to<br>run all day in.</h2>
+      <p>We wove it thin on purpose. Linen for the breeze, cotton for the softness — so it never sticks, never scratches, never gets left in the cupboard.</p>
+    </div>
+    <div class="stats">
+      <div class="stat rev d1"><div class="n">120<span style="font-size:.5em">gsm</span></div><div class="l">Barely-there weight</div></div>
+      <div class="stat rev d2"><div class="n">2×</div><div class="l">More airflow than jersey</div></div>
+      <div class="stat rev d3"><div class="n">0</div><div class="l">Itchy tags or seams</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ DETAILS ══════════════ -->
+<section class="sec" id="details">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Look closer</p>
+      <h2>The bits nobody else bothers with.</h2>
+      <p>Every shirt is finished by hand. Here's what that actually looks like up close.</p>
+    </div>
+    <div class="details">
+      <div class="dcard rev d1"><img class="dzoom" src="assets-blk/bl-d-collar.webp" width="760" height="760" loading="lazy" alt="Camp collar detail on the Baby Bling Balloon Ride Shirt"><h3>Camp collar</h3><p>Soft, open and unstructured — with our woven label and a printed size tag, so nothing scratches the neck.</p></div>
+      <div class="dcard rev d2"><img class="dzoom" src="assets-blk/bl-d-button.webp" width="760" height="760" loading="lazy" alt="Coconut wood buttons detail on the Baby Bling Balloon Ride Shirt"><h3>Coconut wood buttons</h3><p>Real wood, smooth-sanded edges, stitched twice over so they stay put.</p></div>
+      <div class="dcard rev d3"><img class="dzoom" src="assets-blk/bl-d-rocket.webp" width="760" height="760" loading="lazy" alt="Hand-stitched bicycle detail on the Baby Bling Balloon Ride Shirt"><h3>Hand-stitched rocket</h3><p>White dashed running stitch with red-orange flames at the base — thread on thread, no plastic print to crack or peel.</p></div>
+      <div class="dcard rev d4"><img class="dzoom" src="assets-blk/bl-d-planets.webp" width="760" height="760" loading="lazy" alt="The Bling patch detail on the Baby Bling Balloon Ride Shirt"><h3>A little solar system</h3><p>Planets, moons and tiny stars scattered toward the hem, with our woven patch tucked in among them.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FABRIC ══════════════ -->
+<section class="sec" id="fabric">
+  <div class="wrap">
+    <div class="panel split rev">
+      <figure class="fabric-card">
+        <img src="assets-blk/bl-lifestyle.webp" width="1000" height="1333" loading="lazy"
+             alt="A child holding up the Baby Bling Rocket Launch shirt">
+      </figure>
+      <div>
+        <p class="eyebrow">The fabric</p>
+        <h2 style="font-size:clamp(1.85rem,5.2vw,2.9rem);margin-top:12px">Linen that behaves<br>like it's been loved<br>for years.</h2>
+        <p style="margin-top:16px;color:var(--ink-2)">We pre-wash every metre before it's cut. That means the softness you feel on day one is the softness you get on wash forty — and the size you order is the size it stays.</p>
+        <ul class="feature-list">
+          <li><span class="ic">🌬️</span><div><b>Breathes in 40°C</b><span>Open linen weave lets heat escape instead of trapping it.</span></div></li>
+          <li><span class="ic">🧼</span><div><b>Machine wash, no drama</b><span>Cold cycle, flat dry. It gets softer, not sadder.</span></div></li>
+          <li><span class="ic">📏</span><div><b>Pre-shrunk for real</b><span>Sanforised so it won't turn into a crop top after a wash.</span></div></li>
+          <li><span class="ic">🤲</span><div><b>Skin-safe dyes</b><span>Azo-free colours, tested gentle on sensitive baby skin.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REVIEWS ══════════════ -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Why this shirt</p>
+      <h2>Made for big ideas.</h2>
+    </div>
+    <div class="reviews">
+      <div class="rev-card rev d1">
+        <span style="font-size:1.6rem">🚀</span>
+        <h3 style="font-size:1.05rem">Hand-embroidered, not printed</h3>
+        <p>A rocket mid-launch, a ringed planet and a scatter of tiny stars, all stitched thread-on-thread. There is no print to crack, peel or fade in the wash.</p>
+      </div>
+      <div class="rev-card rev d2">
+        <span style="font-size:1.6rem">🌿</span>
+        <h3 style="font-size:1.05rem">Breathable linen, Cuban collar</h3>
+        <p>Deep black linen in an open Cuban collar cut — as comfortable as it is charming, for playdates, outings, or making an ordinary day feel magical.</p>
+      </div>
+      <div class="rev-card rev d3">
+        <span style="font-size:1.6rem">🏷️</span>
+        <h3 style="font-size:1.05rem">A sweet, itch-free patch</h3>
+        <p>Our woven logo patch at the hem lets every little one feel like the hero of their own story — with nothing scratchy at the neck.</p>
+      </div>
+    </div>
+
+    <div class="trust" style="margin-top:clamp(24px,4vw,44px)">
+      <div class="tcard rev d1"><div class="em">🚚</div><b>Ships in 24 hours</b><span>Pan-India, 2–5 days</span></div>
+      <div class="tcard rev d2"><div class="em">↩︎</div><b>7-day returns</b><span>No questions asked</span></div>
+      <div class="tcard rev d3"><div class="em">💵</div><b>Cash on delivery</b><span>Available everywhere</span></div>
+      <div class="tcard rev d4"><div class="em">🇮🇳</div><b>Made in India</b><span>By hands we know</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FAQ ══════════════ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head rev"><p class="eyebrow">Good questions</p><h2>Before you tap buy.</h2></div>
+    <div class="faq">
+      <div class="q rev"><button>What size should I pick? <span class="ch">+</span></button><div class="a"><p>Our sizes run true to age with a relaxed, roomy fit — that's intentional, kids move. If your child is between sizes or you want a second season out of it, size up. Sizes run 4–5 through 9–10 years with a relaxed, roomy fit — that's intentional, kids move. If your child is between sizes, or you want a second season out of it, size up.</p></div></div>
+      <div class="q rev"><button>Will the embroidery survive the washing machine? <span class="ch">+</span></button><div class="a"><p>Yes. It's real thread stitched into the weave, not a print stuck on top — so there's nothing to crack or peel. Cold machine wash, inside out, mild detergent, dry flat in shade. That's it.</p></div></div>
+      <div class="q rev"><button>Does linen mean it'll be scratchy? <span class="ch">+</span></button><div class="a"><p>Opposite. It's a linen-cotton blend, pre-washed before cutting, so it arrives already broken-in and soft. No stiff finish, no starchy feel, and no itchy neck labels — ours is printed straight onto the fabric.</p></div></div>
+      <div class="q rev"><button>Will it shrink? <span class="ch">+</span></button><div class="a"><p>It's sanforised and pre-shrunk, so shrinkage stays under 2%. Skip the dryer and hot water and the size you buy is the size it stays.</p></div></div>
+      <div class="q rev"><button>How fast do you ship, and can I return it? <span class="ch">+</span></button><div class="a"><p>Dispatched within 24 hours on working days, delivered in 2–5 days across India. Free shipping over ₹999. If it doesn't fit or you don't love it, return it within 7 days unworn with tags — we'll pick it up.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FINAL CTA ══════════════ -->
+<section class="final">
+  <div class="wrap rev">
+    <p class="eyebrow">One shirt. Every summer memory.</p>
+    <h2 style="margin-top:14px">Let them go<br>aim a bit higher.</h2>
+    <p>₹1,699 · free shipping over ₹999 · cash on delivery · 7-day returns.</p>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:26px">
+      <a href="#buy" class="btn btn-primary">Get Rocket Launch Linen Shirt</a>
+      <a href="#reviews" class="btn btn-ghost">Read the reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <a href="#" class="logo" style="color:#fff"><span class="dot"></span><b>Baby&nbsp;Bling</b></a>
+        <p style="margin-top:14px;max-width:34ch">Extremely light linen cotton clothing for kids who don't sit still. Cut, stitched and embroidered in India.</p>
+      </div>
+      <div><h4>Shop</h4><ul><li><a href="#buy">Rocket Launch Linen Shirt</a></li><li><a href="#">New arrivals</a></li><li><a href="#">Gift sets</a></li><li><a href="#faq">Size guide</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#faq">FAQs</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Track order</a></li></ul></div>
+      <div><h4>Say hi</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">WhatsApp us</a></li><li><a href="mailto:hello@babybling.in">hello@babybling.in</a></li></ul></div>
+    </div>
+    <div class="f-bot"><span>© <span id="yr"></span> Baby Bling. All rights reserved.</span><span>Privacy · Terms · Refunds</span></div>
+  </div>
+</footer>
+
+<!-- ══════════════ STICKY BUY BAR ══════════════ -->
+<div id="buybar">
+  <div class="bb-in">
+    <div class="bb-thumb"></div>
+    <div class="bb-txt"><b>Rocket Launch Linen Shirt</b><span id="bbSize">₹1,699 · pick a size</span></div>
+    <button class="btn btn-primary" id="bbBtn">Add to cart</button>
+  </div>
+</div>
+
+<!-- ══════════════ CART ══════════════ -->
+<div id="scrim"></div>
+<aside id="cart" aria-label="Shopping cart">
+  <div class="cart-head"><h3>Your bag</h3><button class="x" id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="cart-body" id="cartBody"><div class="cart-empty">Your bag is feeling light.<br>Just like the shirt.</div></div>
+  <div class="cart-foot">
+    <div class="freebar"><i id="freeFill"></i></div>
+    <div class="note" id="freeNote">Add ₹999 more for free shipping</div>
+    <div class="tot"><span>Subtotal</span><span id="subTot">₹0</span></div>
+    <div class="note">Taxes included. Shipping calculated at checkout.</div>
+    <button class="btn btn-primary btn-block" id="checkout">Checkout</button>
+  </div>
+</aside>
+
+<script>
+window.__BB__ = {
+  handle:    "black-linen-shirt",
+  title:     "Rocket",
+  variantId: 111,
+  price:     169900,
+  available: true,
+  optionNames: [{"name":"Size"}],
+  variants: [
+    { id:111, title:"4–5 years", price:169900, available:true, options:["4–5 years"] }
+  ]
+};
+(function(){
+'use strict';
+var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ═══════════ FULL-PAGE CLOUD FIELD ═══════════ */
+var field = document.getElementById('cloudfield');
+var grad  = document.getElementById('grad');
+var sun   = document.getElementById('sun');
+var clouds = [];
+var vh = innerHeight, vw = innerWidth;
+
+/* Clouds live in a virtual band taller than the viewport and are recycled as
+   you scroll, so the whole document — top to bottom — sits inside cloud cover. */
+function buildClouds(){
+  field.innerHTML=''; clouds=[];
+  vh = innerHeight; vw = innerWidth;
+  var n = vw < 700 ? 15 : 23;
+  var BAND = vh * 1.9;                       // virtual height clouds wrap within
+  for(var i=0;i<n;i++){
+    var layer = i % 3;                        // 0 far, 1 mid, 2 near
+    var w = (layer===0 ? 90+Math.random()*110
+           : layer===1 ? 170+Math.random()*180
+           : 280+Math.random()*300) * (vw<700 ? .78 : 1);
+    var cls = layer===0 ? 'mist' : (layer===1 ? (Math.random()<.35?'soft':'') : (Math.random()<.3?'warm':''));
+    var d = document.createElement('div');
+    d.className = 'cl ' + cls;
+    d.style.width = w+'px';
+    d.style.height = (w*0.46)+'px';
+    d.style.opacity = layer===0 ? .32 : (layer===1 ? .55 : .72);
+    d.style.filter = 'drop-shadow(0 14px 22px rgba(160,125,80,'+(layer===2?.10:.04)+'))'+
+                     (layer===0?' blur(2.5px)':(layer===1?' blur(.6px)':''));
+    d.style.zIndex = layer;
+    d.innerHTML = '<i class="b"></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i><i class="l5"></i>';
+    field.appendChild(d);
+    clouds.push({
+      el:d,
+      x: -w*0.4 + Math.random()*(vw + w*0.8),
+      y: Math.random()*BAND,
+      w:w,
+      band:BAND,
+      depth: layer===0 ? 0.14 : (layer===1 ? 0.34 : 0.62),   // parallax factor
+      drift: (layer+1) * (Math.random()<.5?-1:1) * (2+Math.random()*5), // px/s sideways
+      bobA: 4+Math.random()*9,
+      bobT: 4+Math.random()*7,
+      ph: Math.random()*Math.PI*2
+    });
+  }
+  place(scrollY, performance.now()/1000);
+}
+
+function place(sy, t){
+  var docH = Math.max(1, document.documentElement.scrollHeight - vh);
+  var prog = Math.min(1, sy/docH);
+  grad.style.transform = 'translate3d(0,'+(-prog*(grad.offsetHeight - vh)*0.62)+'px,0)';
+  sun.style.transform  = 'translate3d('+(prog*90)+'px,'+(sy*0.10 + prog*60)+'px,0) scale('+(1-prog*0.25)+')';
+  for(var i=0;i<clouds.length;i++){
+    var c=clouds[i];
+    var y = c.y - sy*c.depth;
+    /* wrap within the virtual band so clouds never run out */
+    y = ((y % c.band) + c.band) % c.band - c.band*0.35;
+    var x = c.x + (reduce?0:t*c.drift);
+    var span = vw + c.w*1.2;
+    x = ((x + c.w) % span + span) % span - c.w;
+    var bob = reduce ? 0 : Math.sin(t/c.bobT + c.ph)*c.bobA;
+    c.el.style.transform = 'translate3d('+x.toFixed(1)+'px,'+(y+bob).toFixed(1)+'px,0)';
+  }
+}
+
+var lastSY = 0, running = false;
+function frame(){
+  var t = performance.now()/1000;
+  place(lastSY, t);
+  if(!reduce) requestAnimationFrame(frame); else running=false;
+}
+addEventListener('scroll',function(){ lastSY = scrollY; if(reduce) place(lastSY,0); },{passive:true});
+var rz; addEventListener('resize',function(){ clearTimeout(rz); rz=setTimeout(buildClouds,250); });
+buildClouds(); lastSY = scrollY; frame();
+
+/* ═══════════ 3D shirt tilt ═══════════ */
+var scene = document.getElementById('scene');
+var tx=0,ty=0,cx=0,cy=0,raf=null;
+function loop(){
+  cx += (tx-cx)*0.08; cy += (ty-cy)*0.08;
+  scene.style.transform='rotateX('+cy.toFixed(2)+'deg) rotateY('+cx.toFixed(2)+'deg)';
+  if(Math.abs(tx-cx)>0.01||Math.abs(ty-cy)>0.01){raf=requestAnimationFrame(loop);} else {raf=null;}
+}
+function kick(){ if(!raf) raf=requestAnimationFrame(loop); }
+if(!reduce && matchMedia('(hover:hover)').matches){
+  addEventListener('pointermove',function(e){
+    var r=scene.getBoundingClientRect();
+    tx = ((e.clientX-(r.left+r.width/2))/innerWidth)*26;
+    ty = -((e.clientY-(r.top+r.height/2))/innerHeight)*18;
+    scene.style.transition='none'; kick();
+  },{passive:true});
+}
+if(!reduce && window.DeviceOrientationEvent && !matchMedia('(hover:hover)').matches){
+  addEventListener('deviceorientation',function(e){
+    if(e.gamma==null) return;
+    tx = Math.max(-20,Math.min(20, e.gamma*0.6));
+    ty = Math.max(-14,Math.min(14, (e.beta-45)*0.28));
+    scene.style.transition='none'; kick();
+  },{passive:true});
+}
+
+/* ═══════════ detail zoom bubbles ═══════════ */
+/* ═══════════ product gallery ═══════════ */
+var bvMain=document.querySelector('.shirt-img');
+if(bvMain){
+  document.querySelectorAll('.bvt').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.bvt').forEach(function(o){o.classList.remove('sel');});
+      b.classList.add('sel');
+      bvMain.style.opacity=0;
+      var im=new Image();
+      im.onload=function(){ bvMain.src=b.dataset.src; bvMain.style.opacity=1; };
+      im.src=b.dataset.src;
+    });
+  });
+}
+
+/* ═══════════ reveal ═══════════ */
+var io = new IntersectionObserver(function(en){
+  en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); } });
+},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rev').forEach(function(e){io.observe(e);});
+
+/* ═══════════ nav ═══════════ */
+var nav=document.getElementById('nav');
+addEventListener('scroll',function(){ nav.classList.toggle('stuck', scrollY>16); },{passive:true});
+
+/* ═══════════ FAQ ═══════════ */
+document.querySelectorAll('.q').forEach(function(q){
+  var btn=q.querySelector('button'), a=q.querySelector('.a');
+  btn.addEventListener('click',function(){
+    var open=q.classList.toggle('open');
+    a.style.maxHeight = open ? a.scrollHeight+'px' : 0;
+  });
+});
+
+/* ═══════════ product ═══════════ */
+var BB = window.__BB__ || {};
+var FALLBACK_PRICE = 1699;                 /* used only if Shopify price is 0 */
+var PRICE = (BB.price || 0)/100;
+if (PRICE <= 0) PRICE = FALLBACK_PRICE;
+var FREE_AT = 999;
+function inrRaw(n){ return '\u20b9'+Number(n).toLocaleString('en-IN'); }
+document.querySelectorAll('.price').forEach(function(el){
+  el.textContent = PRICE > 0 ? inrRaw(PRICE) : 'Price coming soon'; });
+var state={size:null,qty:1,colour:'Midnight Black',variantId:0,sizeIndex:-1};
+var sizesEl=document.getElementById('sizes');
+/* Real Size option in Shopify? Build the picker from the actual variants. */
+(function(){
+  var names=(BB.optionNames||[]).map(function(o){return (o.name||o).toString().toLowerCase();});
+  var ix=names.indexOf('size');
+  if(ix<0 || !(BB.variants||[]).length || BB.variants.length<2) return;
+  state.sizeIndex=ix;
+  sizesEl.innerHTML = BB.variants.map(function(vr){
+    var label=(vr.options[ix]||vr.title||'').toString();
+    var num=label.replace(/\s*years?\s*/i,'').trim()||label;
+    return '<button class="size'+(vr.available?'':' out')+'" data-size="'+label+
+           '" data-vid="'+vr.id+'"'+(vr.available?'':' disabled')+'>'+num+
+           '<small>'+(vr.available?'years':'sold out')+'</small></button>';
+  }).join('');
+})();
+var bbSize=document.getElementById('bbSize');
+
+
+sizesEl.addEventListener('click',function(e){
+  var b=e.target.closest('.size'); if(!b||b.disabled) return;
+  sizesEl.querySelectorAll('.size').forEach(function(s){s.classList.remove('sel');});
+  b.classList.add('sel');
+  state.size=b.dataset.size;
+  if(b.dataset.vid){
+    state.variantId=+b.dataset.vid;
+    var chosen=(BB.variants||[]).filter(function(x){return x.id===state.variantId;})[0];
+    if(chosen){ PRICE=chosen.price/100; BB.available=chosen.available;
+      document.querySelectorAll('.price').forEach(function(el){
+        el.textContent=PRICE>0?inrRaw(PRICE):'Price coming soon'; });
+      syncAddBtn(); }
+  }
+  bbSize.textContent=(PRICE>0?inr(PRICE):'Price coming soon')+' · Size '+state.size;
+});
+
+
+
+var qVal=document.getElementById('qVal');
+document.getElementById('qPlus').onclick=function(){ state.qty=Math.min(9,state.qty+1); qVal.textContent=state.qty; syncAddBtn(); };
+document.getElementById('qMinus').onclick=function(){ state.qty=Math.max(1,state.qty-1); qVal.textContent=state.qty; syncAddBtn(); };
+function inr(n){ return '₹'+n.toLocaleString('en-IN'); }
+function syncAddBtn(){ document.getElementById('addBtn').textContent = PRICE>0 ? ('Add to cart — '+inr(PRICE*state.qty)) : 'Add to cart'; }
+
+/* ═══════════ cart ═══════════ */
+var cart=document.getElementById('cart'), scrim=document.getElementById('scrim');
+function openCart(){ cart.classList.add('on'); scrim.classList.add('on'); document.body.style.overflow='hidden'; }
+function closeCart(){ cart.classList.remove('on'); scrim.classList.remove('on'); document.body.style.overflow=''; }
+document.getElementById('openCart').onclick=openCart;
+document.getElementById('closeCart').onclick=closeCart;
+scrim.onclick=closeCart;
+addEventListener('keydown',function(e){ if(e.key==='Escape') closeCart(); });
+
+function renderCart(cart){
+  var body=document.getElementById('cartBody');
+  var cc=document.getElementById('cartCount');
+  var items=(cart&&cart.items)||[];
+  var n=(cart&&cart.item_count)||0;
+  var sub=((cart&&cart.total_price)||0)/100;
+  cc.textContent=n; cc.classList.toggle('on',n>0);
+  document.getElementById('subTot').textContent=inr(sub);
+  document.getElementById('freeFill').style.width=Math.min(100, FREE_AT?sub/FREE_AT*100:0)+'%';
+  document.getElementById('freeNote').innerHTML = sub>=FREE_AT
+    ? '\ud83c\udf89 You\u2019ve unlocked <b>free shipping</b>!'
+    : 'Add <b>'+inr(Math.max(0,FREE_AT-sub))+'</b> more for free shipping';
+  if(!items.length){ body.innerHTML='<div class="cart-empty">Your bag is feeling light.<br>Just like the shirt.</div>'; return; }
+  body.innerHTML = items.map(function(i){
+    var size=(i.properties&&i.properties.Size)?i.properties.Size:(i.variant_title||'');
+    var img=i.image ? i.image.replace(/(\.[a-z]+)(\?|$)/i,'_160x$1$2') : '';
+    return '<div class="ci"><img src="'+img+'" alt=""><div class="info"><b>'+i.product_title+'</b>'+
+      '<small>'+size+'</small><div class="row"><span>'+inr(i.line_price/100)+' \u00d7 '+i.quantity+'</span>'+
+      '<button class="rm" data-key="'+i.key+'">Remove</button></div></div></div>';
+  }).join('<div style="height:10px"></div>');
+  body.querySelectorAll('.rm').forEach(function(b){
+    b.onclick=function(){
+      fetch('/cart/change.js',{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({id:b.dataset.key,quantity:0})})
+        .then(function(r){return r.json();}).then(renderCart);
+    };
+  });
+}
+
+function balloonBurst(x,y){
+  if(reduce) return;
+  var cols=['#D63B31','#2F63D8','#F5B942','#F7C9B0'];
+  for(var i=0;i<9;i++){
+    var b=document.createElement('div');
+    var s=10+Math.random()*14;
+    b.style.cssText='position:fixed;left:'+x+'px;top:'+y+'px;width:'+s+'px;height:'+(s*1.2)+'px;'+
+      'border-radius:50%;background:'+cols[i%4]+';pointer-events:none;z-index:200;opacity:.95;'+
+      'transform:translate('+((Math.random()-.5)*160)+'px,0);animation:riseFade '+(1+Math.random())+'s ease-out forwards';
+    document.body.appendChild(b);
+    setTimeout(function(el){return function(){el.remove();};}(b),2100);
+  }
+}
+
+function addToCart(ev){
+  if(!state.size){
+    document.getElementById('sizes').scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+    setTimeout(function(){
+      sizesEl.classList.add('shake');
+      setTimeout(function(){sizesEl.classList.remove('shake');},500);
+    }, reduce?0:520);
+    return Promise.resolve(false);
+  }
+  if(!(state.variantId||BB.variantId) || !BB.available){
+    alert('This size isn\u2019t available to order right now.');
+    return Promise.resolve(false);
+  }
+  var btn=ev&&ev.currentTarget, txt=btn&&btn.textContent;
+  if(btn){ btn.disabled=true; btn.textContent='Adding\u2026'; }
+  return shopAdd(state.size, state.qty)
+    .then(shopCart)
+    .then(function(cart){
+      renderCart(cart); openCart();
+      if(ev&&ev.clientX) balloonBurst(ev.clientX,ev.clientY);
+      return true;
+    })
+    .catch(function(e){ alert((e&&e.description)||'Could not add to cart.'); return false; })
+    .finally(function(){ if(btn){ btn.disabled=false; btn.textContent=txt; } });
+}
+document.getElementById('addBtn').addEventListener('click',addToCart);
+document.getElementById('bbBtn').addEventListener('click',addToCart);
+document.getElementById('buyNow').addEventListener('click',function(e){ addToCart(e).then(function(ok){ if(ok) goCheckout(); }); });
+document.getElementById('checkout').addEventListener('click',goCheckout);
+
+/* ── Shopify AJAX cart: real line items, real checkout ── */
+function shopAdd(size, qty){
+  return fetch('/cart/add.js',{
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({ items:[{ id: (state.variantId || BB.variantId), quantity: qty,
+      properties: (state.variantId ? {} : (size ? { 'Size': size } : {})) }] })
+  }).then(function(r){ return r.ok ? r.json() : r.json().then(function(e){ throw e; }); });
+}
+function shopCart(){ return fetch('/cart.js').then(function(r){ return r.json(); }); }
+function goCheckout(){ location.href = '/checkout'; }
+
+/* ═══════════ sticky buy bar ═══════════ */
+var bar=document.getElementById('buybar');
+/* Keep a CTA on screen at all times: the bar shows once the main Add to cart
+   has scrolled past, and hides again over the closing CTA. Plain scroll maths —
+   no IntersectionObserver, so it can't be throttled into never firing. */
+var ctaEl=document.getElementById('addBtn'), finalEl=document.querySelector('.final');
+var barTick=false;
+function syncBar(){
+  barTick=false;
+  if(!ctaEl||!finalEl) return;
+  var c=ctaEl.getBoundingClientRect(), f=finalEl.getBoundingClientRect();
+  var pastCta = c.bottom < 8;                    /* CTA is above the viewport */
+  var atFinal = f.top < innerHeight * 0.65;      /* closing CTA is on screen   */
+  bar.classList.toggle('on', pastCta && !atFinal);
+}
+addEventListener('scroll', function(){
+  if(!barTick){ barTick=true; requestAnimationFrame(syncBar); }
+},{passive:true});
+addEventListener('resize', syncBar, {passive:true});
+syncBar();
+new MutationObserver(function(){
+  document.documentElement.style.setProperty('--bar-h', bar.classList.contains('on') ? bar.offsetHeight+'px' : '0px');
+}).observe(bar,{attributes:true,attributeFilter:['class']});
+
+shopCart().then(renderCart).catch(function(){});
+document.getElementById('yr').textContent=new Date().getFullYear();
+syncAddBtn();
+})();
+</script>
+</body>
+</html>

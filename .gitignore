@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.playwright-mcp/
+*.log
+Thumbs.db
+.shopify_token.json

@@ -1,0 +1,5 @@
+{%- capture cfh -%}{{ content_for_header }}{%- endcapture -%}
+{%- capture sr -%}{% render 'sr-checkout' %}{%- endcapture -%}
+{%- assign headx = cfh | append: '</head>' -%}
+{%- assign bodyx = sr | append: '</body>' -%}
+{{ content_for_layout | replace: '</head>', headx | replace: '</body>', bodyx }}

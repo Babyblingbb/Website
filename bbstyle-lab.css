@@ -1,0 +1,51 @@
+/* LAB — only on LAB pages until approved; then move into bbstyle.css */
+.reviews{background:none!important;box-shadow:none!important;border:0!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border-radius:0!important}
+.rev-card{padding:40px 20px 20px!important;border-top:0!important}
+/* why-this-shirt — sewn-on patches */
+.reviews{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:22px!important;max-width:1020px;margin-inline:auto;
+  padding:22px 4px 10px!important}
+.rev-card{position:relative;background:#FFFDF8!important;border-radius:26px!important;padding:40px 20px 20px!important;
+  box-shadow:0 16px 36px rgba(20,70,110,.16),0 2px 0 rgba(255,255,255,.9) inset!important;
+  outline:2px dashed var(--st,#F2A08F);outline-offset:-9px;display:block!important;
+  transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.rev-card:nth-child(1){--st:#F2A08F;--bl:linear-gradient(140deg,#FFD9C7,#FFB199);transform:rotate(-1.6deg)}
+.rev-card:nth-child(2){--st:#8FCFB4;--bl:linear-gradient(140deg,#D6F5E6,#9FE0C4);transform:rotate(1.2deg)}
+.rev-card:nth-child(3){--st:#B9A6EE;--bl:linear-gradient(140deg,#E7DEFF,#C5B3F7);transform:rotate(-.9deg)}
+@media(hover:hover){.rev-card:hover{transform:rotate(0) translateY(-6px)}}
+.rev-card>span:first-child{position:absolute;top:-22px;left:18px;width:56px;height:56px;display:grid;place-items:center;
+  font-size:1.75rem!important;line-height:1;background:var(--bl);box-shadow:0 10px 20px rgba(20,70,110,.18);
+  border-radius:46% 54% 58% 42% / 50% 42% 58% 50%;animation:blobby 6s ease-in-out infinite}
+.rev-card:nth-child(2)>span:first-child{animation-delay:-2s}.rev-card:nth-child(3)>span:first-child{animation-delay:-4s}
+@keyframes blobby{50%{border-radius:58% 42% 44% 56% / 42% 58% 42% 58%;transform:translateY(-3px) rotate(-5deg)}}
+.rev-card::after{content:"No. " counter(rc,decimal-leading-zero);counter-increment:rc;position:absolute;top:18px;right:20px;
+  font-family:'Fredoka';font-size:.72rem;font-weight:600;letter-spacing:.08em;color:var(--st);opacity:.95}
+.reviews{counter-reset:rc}
+.rev-card h3{font-size:1.02rem!important;margin:0 0 6px!important;line-height:1.25}
+.rev-card p{font-size:.86rem!important;line-height:1.5;margin:0;color:var(--ink-2)}
+@media(max-width:759px){
+  .reviews{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(-1 * var(--pad));
+    padding:30px var(--pad) 18px!important;scrollbar-width:none;gap:16px!important}
+  .reviews::-webkit-scrollbar{display:none}
+  .rev-card{flex:0 0 78%;scroll-snap-align:center}
+}
+@media(prefers-reduced-motion:reduce){.rev-card>span:first-child{animation:none}}
+
+
+/* baby-skin benefits under the price */
+.p-ben{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:14px auto 4px;max-width:420px}
+.p-ben span{display:flex;flex-direction:column;align-items:center;gap:6px;font-size:.8rem;font-weight:600;color:var(--ink);line-height:1.2;text-align:center}
+.p-ben i{font-style:normal;font-size:2rem;line-height:1;display:block;filter:drop-shadow(0 7px 9px rgba(20,70,110,.18));animation:hBob 3.2s ease-in-out infinite}
+.p-ben span:nth-child(2) i{animation-delay:-.8s}.p-ben span:nth-child(3) i{animation-delay:-1.6s}.p-ben span:nth-child(4) i{animation-delay:-2.4s}
+@keyframes hBob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-5px) rotate(-6deg)}}
+@media(prefers-reduced-motion:reduce){.p-ben i{animation:none}}
+
+/* p-ben in circles */
+.p-ben i{width:58px;height:58px;display:grid!important;place-items:center;border-radius:50%;font-size:1.7rem!important;
+  background:var(--pc);box-shadow:0 10px 22px rgba(20,70,110,.16),inset 0 2px 0 rgba(255,255,255,.8);border:2px solid #fff;filter:none!important}
+.p-ben span:nth-child(1){--pc:linear-gradient(145deg,#E4F7DA,#BFE8A8)}
+.p-ben span:nth-child(2){--pc:linear-gradient(145deg,#DDF1FF,#A9D8FA)}
+.p-ben span:nth-child(3){--pc:linear-gradient(145deg,#FFF1D6,#FFD59A)}
+.p-ben span:nth-child(4){--pc:linear-gradient(145deg,#FFE3DA,#FFBFA8)}
+
+/* readable labels on any sky */
+.p-ben span{color:var(--ink)!important}
